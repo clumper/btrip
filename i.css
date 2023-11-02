@@ -1,0 +1,70 @@
+/* Your existing CSS code */
+body {
+    text-align: center;
+    font-family: Broadway, Arial, sans-serif;
+    color: #FF0000; /* Bright Red */
+    background-image: url('https://i.imgur.com/lHQlUz1.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-weight: bold; /* Make text bold */
+}
+
+.spin-wheel {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
+}
+
+.wheel-image,
+.wheel-gif {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    position: absolute;
+}
+
+.wheel-gif {
+    display: none; /* Initially hidden */
+}
+
+.result {
+    font-size: 24px;
+    margin-top: 20px;
+    font-weight: bold; /* Make text bold */
+    font-family: Broadway, Arial, sans-serif; /* Set the font to Broadway */
+}
+
+/* Ensure the initial image is centered */
+.wheel-image {
+    margin: 0;
+    padding: 0;
+}
+
+.spin-button {
+    width: 65px; /* Adjust the width as needed */
+    height: 65px; /* Adjust the height as needed */
+    background: url("https://i.imgur.com/Igpen5z.png") center center / cover no-repeat;
+    border: none;
+    cursor: pointer;
+    color: #FF0000; /* Set button text color to bright red */
+    font-weight: bold; /* Make button text bold */
+    font-family: Broadway, Arial, sans-serif; /* Set the font to Broadway */
+}
+
+.spin-button:focus {
+    outline: none; /* Remove the default focus outline */
+}
+
+#overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.95); /* 95% transparent black */
+    z-index: 9999;
+    display: none;
+}
